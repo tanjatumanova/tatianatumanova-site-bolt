@@ -1,5 +1,3 @@
-import { ArrowDown } from 'lucide-react';
-
 interface HeroProps {
   onNavigate: (section: string) => void;
 }
@@ -41,13 +39,6 @@ export default function Hero({ onNavigate }: HeroProps) {
             Посмотреть портфолио
           </button>
         </div>
-
-        <button
-          onClick={() => onNavigate('about')}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 text-[#A68C6D] animate-bounce"
-        >
-          <ArrowDown size={32} />
-        </button>
       </div>
     </section>
   );
